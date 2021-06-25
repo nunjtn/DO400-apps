@@ -10,7 +10,7 @@ pipeline {
       }
     }
   }
-    stage {
+    stage ('Build'){
       steps {
         dir ('exchange-cli') {
          sh "npm run build"
